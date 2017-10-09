@@ -1,7 +1,9 @@
 ---
 path: "/article-1"
-date: "2017-07-12T17:12:33.962Z"
 title: "My First Gatsby Post"
+categories: 
+  - Getting Started
+  - Account Settings
 ---
 
 Oooooh-weeee, my first docs article!

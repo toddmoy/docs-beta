@@ -6,6 +6,9 @@ import Alert from '../components/Alert'
 
 export default function Template ({data}) {
   const { markdownRemark: post } = data
+  let categories = []
+
+  console.log(post.frontmatter)
 
   return (
     <div>
@@ -15,6 +18,9 @@ export default function Template ({data}) {
       <div>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ul>
+          {categories}
+        </ul>
       </div>
       <Footer />
     </div>
@@ -26,9 +32,9 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         path
         title
+        categories
       }
     }
   }
