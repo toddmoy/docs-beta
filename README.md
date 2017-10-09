@@ -8,3 +8,4 @@ Setup
 
 1. Install dependencies with `yarn install`
 1. Run development server with `yarn develop`
+1. Build for production with `yarn build`
