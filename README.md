@@ -1,13 +1,10 @@
-# gatsby-starter-default
-The default Gatsby starter
+DOCS BETA
+=========
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+A proof-of-concept for a documentation site. Based on [Gatsby.js](https://www.gatsbyjs.org)
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
+Setup
+-----
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+1. Install dependencies with `yarn install`
+1. Run development server with `yarn develop`
