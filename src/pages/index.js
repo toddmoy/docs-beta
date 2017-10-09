@@ -1,12 +1,15 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Index({data}) {
   const { edges: posts } = data.allMarkdownRemark
 
   return(
     <div>
+      <Header />
       {
         posts.filter( post => post.node.frontmatter.title.length > 0 )
         .map(({ node: post }) => {
@@ -20,6 +23,7 @@ export default function Index({data}) {
           )
         })
       }
+      <Footer />
     </div>
   )
 }
