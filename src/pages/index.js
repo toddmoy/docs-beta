@@ -28,9 +28,11 @@ export default function Index({data}) {
   )
 }
 
+// Return all posts that are not hidden.
+
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark( filter:{ frontmatter: { hidden: { ne:true }}}) {
       edges {
         node {
           excerpt(pruneLength: 250)
